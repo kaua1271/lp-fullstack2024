@@ -1,0 +1,9 @@
+print("Instagram")
+print("Digite seu nome de usuário e senha")
+nomeusuario = input()
+senha = input()
+
+if(nomeusuario == "marcao_jogador" and senha == "banana123"):
+    print("logado com sucesso")
+else:
+    print("usuario ou senha inválidos")
