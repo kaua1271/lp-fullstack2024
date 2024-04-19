@@ -1,0 +1,8 @@
+n = 1 #variavel que controla repetição
+soma = 0 #soma quantidades de numeros positivos
+while(n <= 6): #enquanto a variavel "n" for menor ou igual que 6 irá repetir
+    aux = float(input()) #variavel que guarda a entrada do usuario  
+    n = n + 1 #somar o valor da variavel "n" +1
+    if(aux > 0): #verificar se o numero e positivo ou não
+        soma = soma + 1 #contar a quantidade de numero positivo
+print(str(soma) + " valores positivos") #mostra na tela o resultado final.
