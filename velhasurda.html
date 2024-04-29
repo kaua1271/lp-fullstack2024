@@ -1,0 +1,26 @@
+<script>
+//velha surda
+//simular a conversa com uma velha surda.
+//quando falarmos com ela baixo(minusculo),
+//ela respondrá: "AN, FALA MAIS ALTO?"
+//quando falarmos gritando(MAIUSCULO), ela responderá:
+//"NÃO DESDE 19XX"(XX -> DATA ALEATÓRIA ENTRE 39 E 59)
+//O PROGRAMA SERÁ ENCERRADO APENAS QUANDO DISSERMOS(DIGITARMOS) "TCHAU" 3 VEZES SEGUIDAS.
+let tchau = 0; //variavel que conta quantas vezes a palavra tchau foi escrita
+let resposta; //variavel que gurda a reposta do usuário
+while(tchau < 3){
+	resposta = prompt(); //lê a resposta do usuário
+	//(SE a resposta é maiuscula)  E (resposta é diferente de TCHAU)
+	if(resposta.toUpperCase() == resposta && resposta != "TCHAU"){  
+		console.log("NÃO DESDE 19XX");
+		tchau = 0;
+	}else if(resposta == "TCHAU"){
+		console.log("NÃO DESDE 19XX");
+		tchau = tchau +1;
+	}else{
+		console.log("AN, FALA MAIS ALTO");
+		tchau = 0;
+	}
+	console.log(tchau) //testar
+}
+</script>
