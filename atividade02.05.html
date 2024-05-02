@@ -2,13 +2,28 @@
 //Faça O programa identificar se a viagem é NACIONAL ou INTERNACIONAL.
 //Valor da passagem NACIONAL: R$ 3.000
 //Valor da passagem INTERNACIONAL: R$ 5.000
-
+//Faça o programa verificar se há  crianças entre os passageiros.
+//A passagem para crianças custa:
+//NACIONAL: 1.500
+//INTERNACIONAL 3.000
 
 let valor; 
-let passageiros = prompt();
-	let NACIONAL = prompt(); //leitura da variavel
-let valor = quantidadepassageiros * passagem; //soma do valor da passagem/quantidade de passageiros
-console.log(valor); //escrevendo no console do navegador
-
+let passageiros = prompt("PASSAGEIROS"); //ler quantidade de passageiros
+valor = prompt("DESTINO") //leitura da variavel
+criança = prompt("crianças")
+passageiros = passageiros - criança //QTD DE ADULTOS
+if (valor == "N") //condiçao
+{
+	criança = criança * 1500;
+	valor = passageiros * 3000;	//multiplicaçao QTD DE ADULTOS
+	valor = valor + criança 
+}
+else if (valor == "I") //executar outra condiçao
+{
+	criança = criança * 3000;
+	valor = passageiros * 5000 //multiplicaçao
+	valor = valor + criança
+}
+console.log(valor)
 
 </script>
