@@ -1,0 +1,25 @@
+<script>
+let valor;
+let passageiros = prompt("PASSAGEIROS"); //ler quantidade de passageiros
+valor = prompt("DESTINO") //leitura da variavel
+criança = prompt("crianças")
+idosos = prompt("idosos")
+passageiros = passageiros - criança; //QTD DE ADULTOS
+passageiros = passageiros - idosos;
+if (valor == "N" && passageiros >= 0) //condiçao
+{
+	criança = criança * 1500; //qtd crianças
+	valor = passageiros * 3000;	//multiplicaçao QTD DE ADULTOS
+    idosos = idosos * 2500;
+	valor = valor + criança + idosos;
+}
+else if (valor == "I" && passageiros >= 0) //executar outra condiçao
+{
+	criança = criança * 3000;
+	valor = passageiros * 5000 //multiplicaçao
+    idosos = idosos * 4500;
+	valor = valor + criança + idosos;
+}
+console.log(valor)
+
+</script>
