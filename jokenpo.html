@@ -1,0 +1,36 @@
+<script>
+let escolha; //variavel da escolha do usuario
+let play1 = 0; //variavel que guarda a pontuação do primeiro jogador
+let cpu = 0; //variavel que guarda a pontuação do segundo jogador
+while(play1 < 3 && cpu < 3){ //enquanto play1 ou o play2 não tiverem 3 pontos, repita
+    resposta = prompt("Escolha: Pedra, Papel, Tesoura");  //imprime na tela
+    console.log("play1 " + play1 + " vs " + cpu + " cpu");  //guarda o placar das pontuações
+	const numeroAleatorio = Math.floor(Math.random() *3 + 1);
+
+
+	if(resposta == 1 && numeroAleatorio == 2){
+		cpu+=1;
+		console.log("CPU ganhou- escolha da CPU: " + numeroAleatorio);
+	}
+	if(resposta == 1 && numeroAleatorio == 3){
+		play1+=1; //guardar ponto
+		console.log("PLayer ganhou - escolha da CPU " + numeroAleatorio);
+	}
+	if(resposta == 2 && numeroAleatorio == 1){
+		play1+=1;
+		console.log("PLayer ganhou - escolha da CPU " + numeroAleatorio);
+	}
+	if(resposta == 2 && numeroAleatorio == 3){
+		cpu+=1;
+		console.log("CPU ganhou- escolha da CPU: " + numeroAleatorio);
+	}
+	if(resposta == 3 && numeroAleatorio == 1){
+		cpu+=1;
+		console.log("CPU ganhou- escolha da CPU: " + numeroAleatorio);
+	}
+	if(resposta == 3 && numeroAleatorio == 2){
+		play1+=1;
+		console.log("PLayer ganhou - escolha da CPU " + numeroAleatorio);
+	}
+}
+</script>
