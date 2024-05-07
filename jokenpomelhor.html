@@ -1,0 +1,30 @@
+<script>
+let escolha;
+let escolhaCPU;
+//jokenpo
+let play1 = 0; //variavel que guarda a pontuação do play1
+let cpu = 0; //variavel que guarda a pontuação da cpu
+while(play1 < 3 && cpu < 3){ //enquanto play1 ou o cpu não tiverem 3 pontos, repita
+    escolha = prompt("Escolha: Pedra, Papel, Tesoura");  //lê a escolha do usuario
+	escolhaCPU = Math.floor(Math.random() *3 + 1); //escolher o numero aleatorio da cpu
+	console.log("escolhaCPU")
+if(escolha == 1 && escolhaCPU == 3 || escolha == 2 && escolhaCPU == 1 || escolha == 3 && escolhaCPU == 2){ //se todas for veradeira o player ganha
+	play1+=1
+	//aumenta pontuação do player
+}else if(escolha == escolhaCPU){
+	//caso a escolha e escolhaCPU for igual empata
+}else{
+	// caso player for falso e não empatar, ponto pro cpu
+	 cpu+=1
+
+}
+console.log("escolha " + play1 + " vs " + cpu + " escolhaCPU");  //guarda o placar das pontuações
+}
+
+if(play1 == 3){
+	console.log("escolha ganhou"); //escolha venceu
+}else{
+	console.log("escolhaCPU ganhou"); //escolhaCPU venceu
+}
+
+</script> 
