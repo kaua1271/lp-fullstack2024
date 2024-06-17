@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(79, 116, 218);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+header a{
+    color: black;
+    margin: 100px;
+    text-decoration: none;
+}
+footer{
+    background-color: rgb(79, 116, 218);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+.container{
+    display: grid;
+    padding: 20px;
+    grid-gap: 10;
+    margin: 20px;
+}
+.linha{
+    display: flex;
+    justify-content: space-between;
+}
